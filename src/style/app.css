@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Muli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', sans-serif;
+    background-color: #FF0056;
+}
+header{
+    padding: 1em;
+    background: #10043E;
+}
+.row{
+  display: flex;
+}
+.logos{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:50%
+}
+.logo img{
+    width: 100%;
+}
+.sandwitch_btn{
+    width: 50%;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav_links{
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+.nav_links ul{
+    list-style: none;
+}
+.nav_links li{
+    margin: 1em;
+    font-size: 1.4rem;
+    color: #A1A192;
+}
+.nav_links li:hover{
+    color:#fff;
+    cursor: pointer;
+}
+#hero{
+    padding: 1em;
+}
+
+.hero_txt{
+  width: 100%;
+  max-width: 25em;
+  margin: 1em auto ;
+ position: relative;
+}
+.hero_txt::before{
+    content: url("../img/quote.png");
+    display:inline;
+    position: absolute;
+    top: 0px;
+    left: -35px;
+}
+
+.hero_txt h1{
+    font-size: 2.7rem;
+    color: #F6F5E2;
+    font-weight: 500;
+    padding-left: 0.3em;
+}
+.hero_txt::after{
+    content: url("../img/quote2.png");
+    display:inline;
+    position: absolute;
+    right: 7.4em;
+    bottom: 3em;
+}
+.hero_txt p{
+    text-align: end;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #0C0006;
+}
+.hero_txt button{
+    display: none;
+}
+.hero_img{
+  width: 100%;
+  max-width: 20em;
+  margin: 0 auto;
+}
+.hero_img img{
+    width: 100%;
+}
+#call_to_action{
+    padding: 1em;
+    text-align: center;
+}
+#call_to_action button{
+    width: 15em;
+    height: 2.5em;
+    font-size: 1.5rem;
+    margin:2em auto 2em auto;
+    outline-style: none;
+    border-style: none;
+    background-color: #10043E;
+    color: #B2B08A;
+    box-shadow: 10px 10px 4px rgba(3, 1, 21, 0.50);
+    border-radius: 20px 0px;
+    cursor: pointer;
+}
+#call_to_action button:hover{
+    background-color: #fff;
+    color: red;
+}
+.logos .nav_links {
+    display: none;
+}
+@media (min-width:700px){
+    *{
+        margin: 0;
+        padding:0;
+    }
+    .container{
+        width: 100%;
+        max-width: 70em;
+        margin: 0 auto;
+    }
+    .sandwitch_btn{
+        display: none;
+    }
+  
+    .logo img{
+      width: 15em;
+      margin: 0;
+      padding: 0;
+    }
+    .logos .nav_links {
+        display: block;
+    }
+    .logos .nav_links ul{
+       display: flex;
+    }
+    .main_hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: blue; */
+        min-height: 30em;
+    }
+    .hero_txt{
+        margin: 5em 0 0 0;
+        padding: 0;
+        width: 50%;
+        max-width: 30em;
+    }
+    .hero_txt h1{
+        padding: 0;
+        font-size: 3rem;
+        max-width: 30em;
+    }
+    .hero_txt  p{
+        padding: 0;
+    }
+    .hero_img{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        /* background-color: blanchedalmond; */
+        max-width: 100%;
+    }
+    .hero_img img{
+        width: 80%;
+        margin-left: 5em;
+    }
+    #call_to_action{
+        text-align: start;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .hero_txt button{
+        width: 15em;
+        height: 2.5em;
+        font-size: 1.5rem;
+        margin:7em 0 2em 0;
+        outline-style: none;
+        border-style: none;
+        background-color: #10043E;
+        color: #B2B08A;
+        box-shadow: 10px 10px 4px rgba(3, 1, 21, 0.50);
+        border-radius: 20px 0px;
+        cursor: pointer;
+        display: block;
+        padding: 0;
+    }
+    .hero_txt button:hover{
+        background-color: #fff;
+        color:red;
+    }
+    .hero_txt::after{
+        content: url("../img/quote2.png");
+        display:inline;
+        position: absolute;
+        right: 11em;
+        bottom: 20.5em;
+    }
+    .hero_txt::before{
+        content: url("../img/quote.png");
+        display:inline;
+        position: absolute;
+        top: 0px;
+        left: -4em;
+    }
+
+}
+
