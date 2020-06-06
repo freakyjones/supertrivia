@@ -5,7 +5,10 @@ const Test=(props)=>{
     return(
         <div id="footer">
             <div className="container">
-               <p>copyright &copy; freakyjones2020</p>
+                <div className="copyright">
+                <p>copyright &copy; freakyjones2020</p>
+                </div>
+               
             </div>
         </div>
     )

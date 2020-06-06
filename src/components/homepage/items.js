@@ -6,6 +6,8 @@ const Home_Items=(props)=>{
          <div className="container">
             <div className="home_main_items">
                <Item/>
+               <Item/>
+               <Item/>
             </div>
          </div>
         </section>
