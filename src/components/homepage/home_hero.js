@@ -1,7 +1,14 @@
-import React from 'react';
-
+import React,{useEffect} from 'react';
+import {useDispatch,useSelector} from 'react-redux'
+import { add } from '../../action/useraction';
 
 const Home_hero=(props)=>{
+    const dispatch=useDispatch()
+
+    // useEffect(()=>{
+    //   dispatch( add())
+    //   console.log("hello")
+    // },[])
      return(
        <section id="home_hero">
            <div className="container">

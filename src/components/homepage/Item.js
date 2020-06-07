@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Item=(props)=>{
+    
+  
      return(
          <div className="item">
              <div className="item_img">
-                <img src="../src/img/batman 1.png"/>
+                <img src={props.image}/>
              </div>
              <div className="item_details">
                  <button >Details</button>   
