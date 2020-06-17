@@ -36,7 +36,7 @@ export const fetch_home_marvel_data_action=()=>{
     return (dispatch)=>{
         let num;
         let items=[]
-        for(num=1;num<731;num++){
+        for(num=1;num<200;num++){
             let item={}
             fetch(`https://www.superheroapi.com/api.php/1233073363709350/${num}`)
             .then(res=>{
@@ -48,7 +48,7 @@ export const fetch_home_marvel_data_action=()=>{
 
                     item.id=data.id;
                     items.push(item)
-                    console.log(data);
+                   
                     
                     if(items.length===num-1)
                     dispatch({
@@ -69,7 +69,7 @@ export const fetch_home_dc_data_action=()=>{
     return (dispatch)=>{
         let num;
         let items=[]
-        for(num=1;num<731;num++){
+        for(num=1;num<200;num++){
             let item={}
             fetch(`https://www.superheroapi.com/api.php/1233073363709350/${num}`)
             .then(res=>{
@@ -81,7 +81,7 @@ export const fetch_home_dc_data_action=()=>{
 
                     item.id=data.id;
                     items.push(item)
-                    console.log(data);
+                  
                     
                     if(items.length===num-1)
                     dispatch({

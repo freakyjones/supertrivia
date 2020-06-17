@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 /* this is the mobile view */
 *{
     margin: 0;
@@ -301,12 +302,12 @@ header{
 .main_form:hover{
     box-shadow: 5px 5px 0.973347px #6C2E2E, 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-table{
+#details #form table{
     border:1px solid #000;
     width: 100%;
     border-collapse: collapse;
 }
-tr,th,td{
+#details #form  tr,th,td{
     border: 1px solid #000;
     padding: 1em;
     font-size: 1.3rem;
@@ -342,6 +343,197 @@ tr,th,td{
     font-size: 2rem;
     text-transform: capitalize;
     color: #080A3A;
+}
+/* this is the end of the details page mobile view */
+/* this is the begining of the compare page mobile view */
+ #compare_heading{
+     padding: 1em;
+     text-align: center;
+ }    
+ .main_compare_heading{
+     width: 100%;
+     max-width: 28em;
+     margin: 2em auto 4em auto;
+ }   
+ .main_compare_heading h1{
+     text-transform: capitalize;
+     font-size: 2rem;
+     color:#fff;
+     
+     letter-spacing: 1px;
+ } 
+ .main_compare_heading p{
+     text-align: center;
+     font-size: 1rem;
+     width: 100%;
+     max-width: 18em;
+     margin: 1em auto 3em auto;
+     text-transform: capitalize;
+     color:#311A1A;
+     font-weight: 400;
+ }
+ .compare_poster{
+     width: 20em;
+     height: 3.5rem;
+     background-color: #080A3A;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #F6F5E2;
+     border-radius: 1em 0 1em 0;
+     position: relative;
+ }
+ .compare_poster::after{
+     content:url("../img/pin.png");
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 5px;
+ }
+
+ .compare_poster::before{
+    content:url("../img/pin.png");
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+ .compare_poster p{
+     font-size: 1.6rem;
+     text-transform: capitalize;
+ }
+ #battle{
+     padding: 1em;
+     text-align: center;
+ }
+ .main_battle{
+     margin-top: 4em;
+ }
+ .main_battle form input{
+   width: 20em;
+   height: 3.5em;
+   margin:1em 0;
+   border-radius: 0.3em;
+   border-style: none;
+   outline-style: none;
+}
+.main_battle form input::placeholder{
+    padding: 1em;
+    color:#000;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.main_battle form p{
+    font-size: 2rem;
+    font-family: 'Ranchers', cursive;
+    color: #000350;
+}
+.main_battle form button{
+    margin-top: 1em;
+    width: 10em;
+    height: 3em;
+    background-color: #0F082A;
+    border-style: none;
+    outline-style: none;
+    color:#fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#result{
+    padding: 1em;
+}
+.result_superhero1{
+     background: #FFFFFF;
+    box-shadow: 1.70672px 1.70672px 1.70672px rgba(0, 0, 0, 0.25);
+    border-radius: 2.1334px;
+    width: 20em;
+    height: 30em;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+}
+.result_superhero2{
+    background: #FFFFFF;
+   box-shadow: 1.70672px 1.70672px 1.70672px rgba(0, 0, 0, 0.25);
+   border-radius: 2.1334px;
+   width: 20em;
+   height: 30em;
+   text-align: center;
+   padding: 1em;
+   margin: 0 auto;
+}
+.compare_result_image{
+    width: 10em;
+   margin: 0 auto;
+   
+}
+.compare_result_image img{
+    width: 100%;
+}
+.compare_result_heading{
+    text-transform: capitalize;
+    margin-bottom: 1.5em;
+}
+.compare_result_data{
+    width: 100%;
+    max-width: 10em;
+    margin: 0 auto;
+    text-align: start;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.compare_result_data img{
+    width: 13px;
+}
+.intelligence,.speed,.durability,.power,.combat,.strength{
+    display: flex;
+    align-items: center;
+
+}
+.vs{
+    margin: 1.5em 0;
+    text-align: center;
+}
+.vs p{
+    font-size: 2.5rem;
+    font-family: 'Ranchers', cursive;
+    color: #000350;
+}
+.compare_result_number{
+   width: 100%;
+   max-width: 15em;
+   margin: 4em auto;
+  
+   color:#fff;
+}
+.compare_result_number table,tr,td{
+    background-color: #000;
+   border:1px solid #fff;
+   color: #fff;
+
+}
+.compare_result_number table{
+    width: 15em;
+    text-align: center;
+}
+.compare_result_announcement{
+    width: 100%;
+    max-width:20em;
+    height: 4em;
+    background: #080A3A;
+border: 0.89049px solid #FFFFFF;
+border-radius: 2.9683px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compare_result_announcement h1{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 @media (min-width:700px){
@@ -487,7 +679,55 @@ tr,th,td{
     }
     .details_image img{
         width: 15em;
-    } 
+        
+    }
+     /*this is the end of the ending of the details page  */
+  /* this  is the starting of the desktop view of compare page */
+  #compare_heading1{
+      padding: 0;
+  }
+   .main_compare_heading{
+       width: 100%;
+       max-width: 40em;
+       margin: 6em 0 6em 0;
+       padding: 0;
+       text-align: left;
+   }
+   .main_compare_heading p{
+       text-align: left;
+       margin: 1em 0 2em 0;
+       font-size: 1.2rem;
+      
+   }
+   .compare_poster{
+       margin: 9em 0 9em 0;
+   }
   
+   .main_battle{
+       padding: 0;
+       margin: 0;
+       text-align: left;
+   }
+   form{
+       display: flex;
+       justify-content: space-around;
+   }
+   .main_battle form input{
+      margin: 0;
+   }
+   .main_battle form button{
+       margin: 0;
+   }
+   .compare_main_result{
+       display: flex;
+   }
+   .vs{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #footer{
+       margin-top: 3em;
+   }
 }
 

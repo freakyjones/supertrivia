@@ -9,7 +9,7 @@ const Compare_heading=()=>{
                        <h1>always wanted a death battle between two superhero </h1>
                        <p>compare and find out who is the best and enjoy your batteles</p>
                   </div>
-                  <div className="compareposter">
+                  <div className="compare_poster">
                     <p>compare now</p>
                   </div>
              </div>
