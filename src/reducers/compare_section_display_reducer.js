@@ -4,7 +4,7 @@ const initialstate={
 
 const compare_section_display_reducer=(state=initialstate,action)=>{
           switch(action.type){
-              case "display":
+              case "displayy":
                   return{
                       ...state,
                       display:action.payload

@@ -73,7 +73,7 @@ const Form=(props)=>{
                     <table>
                        <tbody>
                        <tr>
-                             <th rowSpan="2">Aliases:-</th>
+                             <th rowSpan="2" style={{color:"white"}}>Aliases:-</th>
                               <td>{aliases[0]}</td>
                          </tr>
                          <tr>

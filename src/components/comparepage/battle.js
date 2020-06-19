@@ -14,7 +14,7 @@ const Battle=(props)=>{
      setnames({...names,[name]:value})
 
   }
-  const handlesubmit=(event)=>{
+  const handlesubmitt=(event)=>{
     event.preventDefault();
     const hero1_name=names.hero1;
     const hero1_names=hero1_name.split(" ")
@@ -48,7 +48,7 @@ const Battle=(props)=>{
         <section id="battle">
             <div className="container">
                <div className="main_battle">
-                   <form onSubmit={handlesubmit}>
+                   <form onSubmit={handlesubmitt}>
                        <div className="hero1">
                           <input type="text" name="hero1" placeholder="enter the name"  onChange={handlechange}/>
                        </div>

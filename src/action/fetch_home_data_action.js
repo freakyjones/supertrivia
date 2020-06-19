@@ -6,6 +6,10 @@ export const fetch_home_data_action=()=>{
     return (dispatch)=>{
         let num;
         let items=[]
+        dispatch({
+            type:"request_send",
+            payload:true
+        })
         for(num=1;num<150;num++){
             let item={}
             fetch(`https://www.superheroapi.com/api.php/1233073363709350/${num}`,{mode: 'cors'})
@@ -36,6 +40,10 @@ export const fetch_home_marvel_data_action=()=>{
     return (dispatch)=>{
         let num;
         let items=[]
+        dispatch({
+            type:"request_send",
+            payload:true
+        })
         for(num=1;num<200;num++){
             let item={}
             fetch(`https://www.superheroapi.com/api.php/1233073363709350/${num}`)
@@ -69,6 +77,10 @@ export const fetch_home_dc_data_action=()=>{
     return (dispatch)=>{
         let num;
         let items=[]
+        dispatch({
+            type:"request_send",
+            payload:true
+        })
         for(num=1;num<200;num++){
             let item={}
             fetch(`https://www.superheroapi.com/api.php/1233073363709350/${num}`)

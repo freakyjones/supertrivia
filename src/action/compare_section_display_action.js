@@ -1,7 +1,7 @@
 
 export const compare_display_action=()=>{
     return {
-        type:"display",
+        type:"displayy",
         payload:"block"
     }
 }
