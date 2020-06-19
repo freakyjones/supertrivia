@@ -18,7 +18,11 @@ const Result=(props)=>{
        
          <section id="result" style={{display:block}}>
            {isloading?<div className="container" style={{justifyContent:'center',alignItems:'center'}} >
-             <h1>loading</h1>
+             <div className="wrapper">   
+             <div className="point one" style={{backgroundColor:"blue"}}></div>
+             <div className="point two" style={{backgroundColor:"blue"}}></div>
+             <div className="point three" style={{backgroundColor:"blue"}}></div>
+             </div>
            </div>:
              <div className="container">
                 <div className="compare_main_result">

@@ -535,7 +535,176 @@ border-radius: 2.9683px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* this is the end of the mobile view of the compare page */
+/* this is the start of the mobile view of the compare page */
+#game_main{
+   padding: 1em;
+}
+.game_heading{
+    width: 100%;
+    max-width: 25em;
+    margin: 1em auto;
+    text-align: center;
+}
+.game_heading h1{
+    font-size: 2rem;
+    line-height: 1.1;
+    color:#fff;
+}
+.game_poster{
+    margin: 3em auto 2em auto;
+    text-align: center;
+    width: 100%;
+    max-width: 30em;
+    background-color: #ECE4D8;
+    padding: 2em;
+}
+.game_poster p{
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 10em;
+    margin: 0 auto;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #605783;
+}
+.game_input{
+    text-align: center;
+}
+.game_input input{
+    width: 18em;
+    height: 3em;
+    border-style: none;
+    outline-style: none;
+    padding: 1em;
+}
+.game_input form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game_input input::placeholder{
+    padding:1em;
+    text-transform: capitalize;
+}
+.game_input button{
+    margin-left: 1em;
+    width: 6em;
+    height: 1.9em;
+    background-color: #794545;
+    border-style: none;
+    outline-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#game_question{
+    padding: 2em;
+    background-color: #FAF2F2;
+    margin: 3em 0 1.5em 0 ;
+}
+.main_game_question_heading{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 25em;
+    margin: 0 auto;
+}
+.main_game_question_heading p{
+    font-weight: 400;
+    color: #301893;
+}
+.main_game_answer{
+    width: 100%;
+    max-width: 25em;
+    margin: 1em auto;
+    text-align: center;
+}
+.main_game_answer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_game_answer input{
+    width: 16em;
+    height: 2.5em;
+    padding: 1em;
+    border-style: 1px solid blue;
+    outline-style: none;
+}
+.main_game_answer button{
+    margin-left: 1em;
+    background-color: #794545;
+    font-size: 1rem;
+    width: 5em;
+    height: 2em;
+    border-style: none;
+    outline-style: none;
+    cursor: pointer;
+    color:#fff;
+}
+#game_result{
+    padding: 1em;
+}
+.main_game_result{
+    width: 100%;
+    max-width: 25em;
+    margin: 0 auto;
+    background: #F7EDED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1.5em;
+}
+.game_result_heading{
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+.game_result_heading h1{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #080A3A;;
+}
+.game_result_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num{
+    text-align: center;
+  
+}
+.num h2{
+    font-size: 1.2rem;
+    color: #FF0056
+}
+.num p{
+    font-size: 1.3rem;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.point{
+    background-color: darkgoldenrod;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    /* animation: loading 1s ease-in-out infinite; */
+}
+.one{
+    animation:loading 1s -0.30s ease-in-out infinite;
+}
+.two{
+    animation:loading 1s -0.15s ease-in-out infinite;
+}
+.three{
+    animation:loading 1s 0s ease-in-out infinite;
+}
+.point+.point{
+    margin-left: 1em;
+}
 
+/* this is the end of the compare page mobile view */
 @media (min-width:700px){
     *{
         margin: 0;
@@ -729,5 +898,31 @@ border-radius: 2.9683px;
    #footer{
        margin-top: 3em;
    }
+   /* this is the starting of the compare page desktop view */
+   
+   .game_heading{
+       max-width: 32em;
+       margin: 2em 0;
+       text-align: left;
+   }
+   .game_poster{
+     max-width: 100%;
+     margin: 6em auto 2em auto;
+   }
+   .main_game_result{
+       max-width: 40em;
+   }
 }
 
+/* this is the animation section */
+@keyframes loading {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
