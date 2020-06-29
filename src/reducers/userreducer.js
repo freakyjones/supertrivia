@@ -15,17 +15,17 @@ const Userreducer=(state=initialstate,action)=>{
         case "sub":
             return{
                 ...state,
-                num:num-action.payload
+                num:state.num-action.payload
             } 
         case "mul":
             return{
                 ...state,
-                num:num*action.payload
+                num:state.num*action.payload
             }   
         case "division":
             return{
                 ...state,
-                num:num/action.payload
+                num:state.num/action.payload
             }  
         default :
         return state;          

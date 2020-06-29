@@ -10,7 +10,7 @@ const Item=(props)=>{
      return(
          <div className="item">
              <div className="item_img">
-                <img src={props.image}/>
+                <img src={props.image} alt="no image available"/>
              </div>
              <div className="item_details" onClick={handledetails}>
                  <Link  to="/details">

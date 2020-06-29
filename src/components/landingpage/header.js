@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import { Link} from 'react-router-dom'
+import Logo from "../../img/logo.svg"
+import Togglebtn from "../../img/toggle_btn.svg"
+import Cutbtn from "../../img/cut.svg"
 const Header=(props)=>{
     
     const [display,setdisplay]=useState("none")
@@ -17,11 +20,11 @@ const Header=(props)=>{
                 <div className="nav">
                    <div className="logos row">
                         <div className="logo">
-                        <img src="../src/img/logo.svg"/>
+                        <img src={Logo}/>
                         </div>
                         <div className="sandwitch_btn" >
-                            {display==="none"?<img src="../src/img/toggle_btn.svg" onClick={handleclick}/>:
-                            <img src="../src/img/cut.svg" onClick={handleclick}/>
+                            {display==="none"?<img src={Togglebtn} onClick={handleclick}/>:
+                            <img src={Cutbtn} onClick={handleclick}/>
                             }
                        
                         </div>

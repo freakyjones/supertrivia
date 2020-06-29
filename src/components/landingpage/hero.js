@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-
+import Landingimg from "../../img/landing_img.png"
 const Hero=()=>{
     return(
         <section id="hero">
@@ -16,7 +16,7 @@ const Hero=()=>{
                </div>
                <div  className="hero_img">
                   <div className="main_img">
-                     <img src="../src/img/landing_img.png" alt="landing_page"/>
+                     <img src={Landingimg} alt="landing_page"/>
                   </div>
                </div>
              </div>

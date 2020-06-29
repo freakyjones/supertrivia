@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import {useDispatch,useSelector} from 'react-redux'
 import { add } from '../../action/useraction';
-
+import Arcreactor from '../../img/arc_reactor.svg'
 const Home_hero=(props)=>{
     const dispatch=useDispatch()
 
@@ -18,7 +18,7 @@ const Home_hero=(props)=>{
                     <p>know all about your superhero,compare with other superheros and u can also play games how you know about your superhero</p>
                 </div>
                 <div className="main_home_img flex-item">
-                    <img src="../src/img/arc_reactor.svg" alt="arc_reactor"/>
+                    <img src={Arcreactor} alt="arc_reactor"/>
                 </div>
              </div>
            </div>
